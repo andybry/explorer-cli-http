@@ -1,0 +1,22 @@
+{
+    "name": "explorer-cli-http",
+    "version": "0.0.1",
+    "description": "HTTP run type for explorer-cli",
+    "license": "MIT",
+    "author": "Andrew Bryant <arbryant101@gmail.com> (https://github.com/andybry)",
+    "keywords": [
+      "cli",
+      "terminal",
+      "http",
+      "data",
+      "explorer-cli"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/andybry/explorer-cli-http.git"
+    },
+    "dependencies": {
+        "lodash": "4.17.4",
+        "request": "2.81.0"
+    }
+}
