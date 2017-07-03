@@ -1,22 +1,35 @@
 {
-    "name": "explorer-cli-http",
-    "version": "0.0.1",
-    "description": "HTTP run type for explorer-cli",
-    "license": "MIT",
-    "author": "Andrew Bryant <arbryant101@gmail.com> (https://github.com/andybry)",
-    "keywords": [
-      "cli",
-      "terminal",
-      "http",
-      "data",
-      "explorer-cli"
-    ],
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/andybry/explorer-cli-http.git"
-    },
-    "dependencies": {
-        "lodash": "4.17.4",
-        "request": "2.81.0"
-    }
+  "name": "explorer-cli-http",
+  "version": "0.0.1",
+  "description": "HTTP run type for explorer-cli",
+  "license": "MIT",
+  "author": "Andrew Bryant <arbryant101@gmail.com> (https://github.com/andybry)",
+  "keywords": [
+    "cli",
+    "terminal",
+    "http",
+    "data",
+    "explorer-cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andybry/explorer-cli-http.git"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "build": "rimraf lib && babel src -d lib",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "request": "2.81.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "rimraf": "2.6.1"
+  }
 }
