@@ -21,7 +21,12 @@
   "main": "./lib/index",
   "scripts": {
     "build": "rimraf lib && babel src -d lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "cov": "jest --coverage",
+    "cov:watch": "jest --watchAll --coverage",
+    "cov:html": "jest --coverage --coverageReporters=html"
   },
   "dependencies": {
     "lodash": "4.17.4",
@@ -30,6 +35,11 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-preset-env": "1.5.2",
+    "jest": "20.0.4",
     "rimraf": "2.6.1"
+  },
+  "jest": {
+    "clearMocks": true,
+    "testEnvironment": "node"
   }
 }
